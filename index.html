@@ -1,0 +1,51 @@
+<!DOCTYPE THML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Media Tests</title>
+</head>
+<body>
+    <div id="Background" style="color:#00FF00; position:absolute; width:100%; height:100%; z-index:-1">    
+        <img src="stylesheets/images/background.jpg" height="100%" width="100%"/>    
+    </div>   
+
+    <p align = "center"><a href="profile.html">Supported Tests List</a></p>
+    <p align = "center"><a href="videoTests/index.html">Video Tests</a></p>
+    <p align = "center"><a href="audioTests/index.html">Audio Tests</a></p>
+    <p align = "center"><a href="imageTests/index.html">Image Tests</a></p>
+
+    <div align="center">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <script type="text/javascript">
+	function search() {
+	    
+	    var v_i=document.createElement('input');
+	    var v_f=document.createElement('form');
+	    var a_i=document.createElement('input');
+	    var a_f=document.createElement('form');
+	    var c_i=document.createElement('input');
+	    var c_f=document.createElement('form');
+
+	    v_i.setAttribute("type", "text");
+	    v_i.setAttribute("value", "Input video format");
+	    v_f.setAttribute("align", "center");
+	    document.body.appendChild(v_f);
+	    v_f.appendChild(v_i); 
+
+	    a_i.setAttribute("type", "text");
+	    a_i.setAttribute("value", "Input audio format");
+	    a_f.setAttribute("align", "center");
+	    document.body.appendChild(a_f);
+	    a_f.appendChild(a_i); 
+
+	    c_i.setAttribute("type", "text");
+	    c_i.setAttribute("value", "Input container format");
+	    c_f.setAttribute("align", "center");
+	    document.body.appendChild(c_f);
+	    c_f.appendChild(c_i); 
+	}
+    </script>
+</body>
+</html>
